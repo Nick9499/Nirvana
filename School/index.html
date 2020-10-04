@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="carousel.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="sticky-top">
+        <div class="logo">
+            <img src="img/book.PNG" alt="">
+            <span class="h4 font-weight-bold">Nirvana Academy</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#staff">Staff</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <div class="carousel-container">
+        <i class="fas fa-arrow-left" id="prevBtn"></i>
+        <i class="fas fa-arrow-right" id="nextBtn"></i>
+        <div class="carousel-slide">
+            <img src="img/img4.jpg" alt="school3" id="lastClone">
+            <img src="img/img1.jpg" alt="school1">         
+            <img src="img/img2.jpg" alt="school2">
+            <img src="img/img3.jpg" alt="school3">
+            <img src="img/img4.jpg" alt="school3">
+            <img src="img/img1.jpg" alt="school1" id="firstClone">      
+        </div>
+    </div>
+
+    <div class="container mt-5 mb-5" id="home">
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <h3 class="font-weight-bold">Welcome to Nirvana Academy</h3>
+                <p class="text-muted">The Place where the true learning begins</p>
+                <div class="ml-4">
+                    <img src="img/flusk.PNG" alt="">
+                    <span class="h5">Best Courses</span>
+                    <p class="text-muted">We have the best courses available in our school</p>
+                </div>
+                <div>
+                    <img src="img/teachers.PNG" alt="">
+                    <span class="h5">Best teachers</span>
+                    <p class="text-muted ml-4">We have the best teachers available for every subject in our school</p>
+                </div>
+                <div class="ml-3">
+                    <img src="img/message.PNG" alt="">
+                    <span class="h5">Best Community</span>
+                    <p class="text-muted ml-2">We have the on of the best and supportive Community</p>
+                </div>
+            </div>
+            <div class="img-container col-xs-12 col-md-6 mt-5">
+                <img src="img/img3.jpg" alt="" class="img1 img-fluid">
+                <img src="img/img4.jpg" alt="" class="img2 img-fluid mr-5">
+            </div>
+
+        </div> 
+
+    </div>
+    <div class="container mt-5 pt-5" id="about">
+        <div class="row">
+            <div>
+                <h3 class="font-weight-bold ">About Nirvana</h3>
+                <p class="text-muted">We know what to teach, how to teach with the right pace</p>
+            </div>
+            
+        </div>
+        <div class="row mt-5 pt-5">
+            <div class="col-xs-12 col-md-4">
+                <img src="img/flusk.PNG" alt="">
+                <span class="h5">Best Courses</span>
+                <p class="text-muted">We have the best courses available in our school</p>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <img src="img/teachers.PNG" alt="">
+                <span class="h5">Best teachers</span>
+                <p class="text-muted ml-4">We have the best teachers available for every subject in our school</p>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <img src="img/message.PNG" alt="">
+                <span class="h5">Best Community</span>
+                <p class="text-muted ml-2">We have the on of the best and supportive Community</p>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5 pt-5" id="staff">
+        <div class="row">
+            <h3 class="text-info font-weight-bold mb-5 pb-2">Our Teachers</h3>
+
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-3 mt-5">
+                <img src="img/sarahBrown.jpg" alt="" class="rounded-circle profile img-thumbnail">
+                <h5 class="text-info text-center">Mrs. Brown</h5>
+                <p class="text-muted text-center ">Front-end Specialist</p>
+            </div>
+            <div class="col-xs-12 col-md-3 mt-5">
+                <img src="img/mike-austin.jpg" alt="" class="rounded-circle profile img-thumbnail mt-5">
+                 <h5 class="text-info text-center  ">Mrs. Austin</h5>
+                <p class="text-muted text-center  ">Back-end Specialist</p>
+            </div>
+            <div class="col-xs-12 col-md-3 mt-5">
+                <img src="img/midas-hofstra.jpg" alt="" class="rounded-circle profile img-thumbnail mt-5">
+                 <h5 class="text-info text-center  ">Mr. Hofstra</h5>
+                <p class="text-muted text-center  ">UI Specialist</p>
+            </div>
+            <div class="col-xs-12 col-md-3 mt-5">
+                <img src="img/anton-darius.jpg" alt="" class="rounded-circle profile img-thumbnail mt-5">
+                 <h5 class="text-info text-center ">Mr. darius</h5>
+                <p class="text-muted text-center ">Database Specialist</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container mt-5 pt-5" id="courses">
+        <div class="row">
+            <div>
+                <h3 class="font-weight-bold mt-5 pt-5">Explore Courses</h3>
+                <p class="text-muted">We have got everything you ever wanted to learn</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="img-container row">
+                <div class="col-xs-12 col-md-4">
+                    <figure>
+                        <img src="img/html.jpg" alt="" class="html img-thumbnail">
+                        <figcaption class="font-weight-bold text-muted mt-3 ml-2 figure-caption">Learn Everything about HTML5</figcaption>
+                    </figure>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <figure>
+                        <img src="img/css.jpg" alt="" class="css img-thumbnail">
+                        <figcaption class="font-weight-bold text-muted mt-3 ml-2 figure-caption">Learn Everything about CSS3</figcaption>
+                    </figure>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <figure>
+                        <img src="img/js.jpg" alt="" class="js img-thumbnail">
+                        <figcaption class="font-weight-bold text-muted mt-3 ml-2 figure-caption">Learn Everything about JavaScript</figcaption>
+                    </figure>
+                </div>
+               
+            </div>
+        </div>
+        <div>
+            <div class="img-container row">
+                <div class="col-xs-12 col-md-4">
+                    <figure>
+                        <img src="img/React.jpg" alt="" class="html img-thumbnail">
+                        <figcaption class="font-weight-bold text-muted mt-3 ml-2 figure-caption">Learn Everything about React</figcaption>
+                    </figure>
+                </div>
+               <div class="col-xs-12 col-md-4">
+                    <figure>
+                        <img src="img/github.jpg" alt="" class="css img-thumbnail">
+                        <figcaption class="font-weight-bold text-muted mt-3 ml-2 figure-caption">Learn Everything about Github</figcaption>
+                    </figure>
+               </div>
+               <div class="col-xs-12 col-md-4">
+                    <figure>
+                        <img src="img/Node.jpg" alt="" class="js img-thumbnail">
+                        <figcaption class="font-weight-bold text-muted mt-3 ml-2 figure-caption">Learn Everything about Node</figcaption>
+                    </figure>   
+               </div>
+                
+            </div>
+        </div>
+        <button class="btn btn-warning mt-5 ">More Courses</button>
+    </div>
+    <div class="contact d-flex flex-column align-items-center mt-5" id="contact">
+        <h3 class="text-white  mt-5">Contact Us</h3>
+        <p class="text-white ">We are always here to help</p>
+        <button class="btn btn-warning ">Contact Us Now</button>
+    </div>
+
+    <div class="footer container-fluid page-footer ">
+        <h4 class="text-white text-center pt-5">Nirvana Academy</h4>
+        <p class="text-white text-center">A place where knowledge is served</p>
+        <div class="footer-copyright text-white text-center pb-5">
+            © 2020 Copyright: Subhajit Sarkar
+        </div>
+        <span class="ml-5 pl-5"><a href="#"><i class="fab fa-2x fa-twitter text-white" ></i></a></span>
+        <span class="pl-4"><a href="#"><i class="fab fa-2x fa-facebook text-white " ></i></a></span>
+        <span class="pl-4"><a href="#"><i class="fab fa-2x fa-instagram text-white " ></i></a></span>
+        <span class="pl-4 mb-5"><a href="#"><i class="fab fa-2x fa-pinterest text-white " ></i></a></span>
+
+    </div>
+    
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+    <script src="app.js"></script>
+</body>
+</html>
