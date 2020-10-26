@@ -58,3 +58,72 @@ carouselSlide.addEventListener('transitionend', () => {
 });
 
 navSlide();
+
+const counters = document.querySelectorAll('.counter');
+const speed = 200;
+counters.forEach(item => {
+    const updateCount = () => {
+        const target = +item.getAttribute('data-target');
+        const count = +item.innerText;
+
+        const inc = target / speed;
+
+        if (count < target) {
+            item.innerText = count + inc;
+            setTimeout(updateCount, 1);
+        }
+        else {
+            count.innerText = target;
+        }
+
+    }
+    updateCount();
+});
+
+const list1 = document.querySelector('#list .r8c1');
+const list2 = document.querySelector('#list .r8c2');
+const list3 = document.querySelector('#list .r8c3');
+const list4 = document.querySelector('#list .r9c1');
+const list5 = document.querySelector('#list .r9c2');
+const list6 = document.querySelector('#list .r9c3');
+
+const fundamentals = document.querySelector('#fundamentals');
+fundamentals.addEventListener('change', function (e) {
+    if (fundamentals.checked) {
+        list1.style.display = "grid";
+        list2.style.display = "grid";
+    }
+    else {
+        list1.style.display = 'none';
+        list2.style.display = 'none';
+
+    }
+})
+
+const intermidiate = document.querySelector('#intermidiate');
+intermidiate.addEventListener('change', function (e) {
+    if (intermidiate.checked) {
+        list3.style.display = "grid";
+        list4.style.display = "grid";
+    }
+    else {
+        list3.style.display = "none";
+        list4.style.display = "none";
+        
+    }
+})
+
+const masters = document.querySelector('#masters');
+masters.addEventListener('change', function (e) {
+    if (masters.checked) {
+        list5.style.display = "grid";
+        list6.style.display = "grid";
+    }
+    else {
+        list5.style.display = "none";
+        list6.style.display = "none";
+    }
+    
+    
+})
+
